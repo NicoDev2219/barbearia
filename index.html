@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom do Corte - Barbearia Premium</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-cut"></i>
+                    <span>Dom do Corte</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#agendamento" class="nav-link">Agendamento</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Estilo e</span>
+                    <span class="title-line highlight">Elegância</span>
+                </h1>
+                <p class="hero-description">
+                    Experimente o melhor da barbearia tradicional com um toque moderno. 
+                    Cortes precisos, barbas impecáveis e atendimento premium.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#agendamento" class="btn btn-primary">Agendar Horário</a>
+                    <a href="#servicos" class="btn btn-secondary">Ver Serviços</a>
+                </div>
+            </div>
+           
+            </div>
+        </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <p class="section-subtitle">Experiência premium em cada detalhe</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Corte Masculino</h3>
+                    <p>Cortes modernos e clássicos executados com precisão e estilo</p>
+                    <div class="service-price">R$ 45</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-scissors"></i>
+                    </div>
+                    <h3>Barba & Bigode</h3>
+                    <p>Aparos e modelagem de barba com produtos premium</p>
+                    <div class="service-price">R$ 35</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Tratamentos</h3>
+                    <p>Hidratação capilar e tratamentos especializados</p>
+                    <div class="service-price">R$ 60</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Pacote Premium</h3>
+                    <p>Experiência completa: corte + barba + tratamento</p>
+                    <div class="service-price">R$ 120</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Nós</h2>
+                    <p>
+                        Com mais de 15 anos de experiência, a Dom do Corte representa a excelência 
+                        em barbearia premium. Nossa equipe de profissionais especializados combina 
+                        técnicas tradicionais com tendências modernas.
+                    </p>
+                    <p>
+                        Utilizamos apenas produtos de alta qualidade e oferecemos um ambiente 
+                        sofisticado e acolhedor, onde cada cliente recebe atenção personalizada.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-target="1500">0</div>
+                            <div class="stat-label">Clientes Satisfeitos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Anos de Experiência</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-target="5">0</div>
+                            <div class="stat-label">Profissionais</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-store"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section class="booking" id="agendamento">
+        <div class="container">
+            <h2 class="section-title">Agendamento</h2>
+            <p class="section-subtitle">Reserve seu horário de forma rápida e fácil</p>
+            <div class="booking-form-container">
+                <form class="booking-form" id="booking-form">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="servico">Serviço Desejado</label>
+                        <select id="servico" name="servico" required>
+                            <option value="">Selecione um serviço</option>
+                            <option value="corte">Corte Masculino - R$ 45</option>
+                            <option value="barba">Barba & Bigode - R$ 35</option>
+                            <option value="tratamento">Tratamentos - R$ 60</option>
+                            <option value="premium">Pacote Premium - R$ 120</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="data">Data Preferida</label>
+                            <input type="date" id="data" name="data" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="horario">Horário Preferido</label>
+                            <select id="horario" name="horario" required>
+                                <option value="">Selecione um horário</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="observacoes">Observações</label>
+                        <textarea placeholder="Digite sua observação aqui..."></textarea>
+                        
+
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Confirmar Agendamento</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-subtitle">Estamos aqui para atendê-lo da melhor forma</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Endereço</h4>
+                            <p>Rua dos Barbeiros, 123<br>Centro, São Paulo - SP</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefone</h4>
+                            <p>(11) 9 9999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-mail</h4>
+                            <p>contato@domdocorte.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Funcionamento</h4>
+                            <p>Seg - Sex: 9h às 19h<br>Sáb: 8h às 17h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-cut"></i>
+                        <span>Dom do Corte</span>
+                    </div>
+                    <p>Excelência em barbearia premium desde 2009</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#servicos">Corte Masculino</a></li>
+                        <li><a href="#servicos">Barba & Bigode</a></li>
+                        <li><a href="#servicos">Tratamentos</a></li>
+                        <li><a href="#servicos">Pacote Premium</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#agendamento">Agendamento</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua dos Barbeiros, 123</p>
+                    <p><i class="fas fa-phone"></i> (11) 9 9999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@domdocorte.com.br</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dom do Corte. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
